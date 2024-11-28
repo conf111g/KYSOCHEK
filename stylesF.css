@@ -1,0 +1,126 @@
+/* Общий стиль страницы */
+body {
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+    color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 800px;
+    background: #1a1a1a;
+    border: 2px solid #b00020;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    text-align: justify;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    color: #b00020;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Абзацы текста */
+p {
+    margin: 10px 0;
+    text-indent: 30px; /* Красная строка */
+}
+
+/* Список */
+ul {
+    margin: 10px 0 20px;
+    padding-left: 40px;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #f2f2f2;
+}
+
+/* Ссылки */
+a {
+    color: #b00020;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff5050;
+    text-decoration: underline;
+}
+
+/* Кнопка возврата (если нужно добавить) */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #f9f9f9;
+    background: #b00020;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back-button:hover {
+    background: #ff5050;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #f9f9f9;
+    background: #b00020;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back-button:hover {
+    background: #ff5050;
+    transform: translateY(-3px);
+}
+
+.back-button:active {
+    background: #a0001a;
+    transform: translateY(1px);
+}
+
